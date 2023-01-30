@@ -49,5 +49,52 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn();
         })
     })
+
+    // $('#consultation-form').validate();
+    // $('#consultation form').validate({
+    //     rules: {
+    //         name: "required",
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: "Please specify your name",
+    //         phone: "Please specify your phone number",
+    //         email: {
+    //           required: "We need your email address to contact you",
+    //           email: "Your email address must be in the format of name@domain.com"
+    //         }
+    //       }
+    // });
+    // $('#order form').validate();
+
+    function validateForm (form){
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Please specify your name",
+                phone: "Please specify your phone number",
+                email: {
+                  required: "We need your email address to contact you",
+                  email: "Your email address must be in the format of name@domain.com"
+                }
+              }
+        });
+    }
+    
+    validateForm('#consultation-form');
+    validateForm('#consultation form');
+    validateForm('#order form');
 });
+
 
