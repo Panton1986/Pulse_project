@@ -1,0 +1,43 @@
+// Only on GRID
+
+// //adaptive font
+// @mixin adaptive-font($pcSize, $mobSize, $maxSize) {
+// 	$addSize: $pcSize - $mobSize;
+// 	@if $maxSize==1 {
+// 		//if less than contaainer
+// 		font-size: $pcSize + px;
+// 		@media (max-width: #{$maxWidthContainer + px}) {
+// 			font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+// 		}
+// 	} @else if $maxSize==2 {
+// 		//if more than contaainer
+// 		font-size: $pcSize + px;
+// 		@media (min-width: #{$maxWidthContainer + px}) {
+// 			font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 		}
+// 	} @else {
+// 		//everytime
+// 		font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 	}
+// }
+
+// //Adaptive value
+// @mixin adaptive-value($property, $startSize, $minSize, $type) {
+// 	$addSize: $startSize - $minSize;
+// 	@if $type==1 {
+// 		//if less than contaainer
+// 		#{$property}: $startSize + px;
+// 		@media (max-width: #{$maxWidthContainer + px}) {
+// 			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+// 		}
+// 	} @else if $type==2 {
+// 		//if more than contaainer
+// 		#{$property}: $startSize + px;
+// 		@media (min-width: #{$maxWidthContainer + px}) {
+// 			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 		}
+// 	} @else {
+// 		//everytime
+// 		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+// 	}
+// }
