@@ -2,7 +2,7 @@
     min-height: 920px;
     &__item {
         margin-top: 60px;
-        width: 915px;
+        max-width: 915px;
         padding-right: 24px;
         display: flex;
         justify-content: space-between;
@@ -13,7 +13,7 @@
         margin-right: 60px;
     }
     &__client {
-        width: 680px;
+        max-width: 680px;
         &_name {
             font-weight: 700;
             font-size: 18px;

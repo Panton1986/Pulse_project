@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="src/css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.min.css">    
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
-                <a href="#" class="herader__logo">
+                <a href="#" class="header__logo">
                     <img src="icons/logo.png" alt="logo">
                 </a>
                 <div class="header__official">
@@ -70,7 +69,7 @@
                     <p>Our employees are always ready to share their experience, as they themselves run half marathons, swam across the Bosphorus, and are preparing for triathlon competitions!</p>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/pros/heart.png" alt="heart">
+                    <img src="icons/pros/heart.png" alt="heart" class="advantages__item_animated">
                     <h3>We care about health</h3>
                     <p>We work to ensure that your sports activities benefit your health and bring joy to you and your loved ones!</p>
                 </div>
@@ -98,7 +97,7 @@
         </div>
     </section>
 
-    <section class="slider">
+    <div class="slider">
         <div class="container">
             <div class="slider__inner">
                 <div>
@@ -112,7 +111,7 @@
                 </div>
               </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -124,7 +123,7 @@
             </ul>
 
             <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0s" data-wow-duration="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -149,7 +148,7 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -174,7 +173,7 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -199,7 +198,7 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -224,7 +223,7 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -249,6 +248,33 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
+                <div class="catalog-item animate__animated wow animate__fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/watches.png" alt="watch" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__descr">For the first steps in heart rate training</div>
+                            <div class="catalog-item__link_wrapper" ><a href="" class="catalog-item__link">details</a></div>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>You will hear a sound notification about the desired heart rate during training;</li>
+                            <li>You will see an informative graphical indicator of target training heart rate zones;</li>
+                            <li>You will also see information about calorie consumption per workout;</li>
+                            <li>You can view data for 10 workouts.</li>
+                            <a href="" class="catalog-item__back">back</a>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">$ 99</div>
+                            <div class="catalog-item__price">$ 79</div>
+                        </div>
+                        <button class="button button_mini">buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content animate__animated animate__fadeInUp">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
@@ -275,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="catalog__content">
+            <div class="catalog__content animate__animated animate__fadeInUp">
                 <div class="catalog-item">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
@@ -301,34 +327,7 @@
                         <button class="button button_mini">buy</button>
                     </div>
                 </div>
-            </div>
-            <div class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/watches.png" alt="watch" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
-                            <div class="catalog-item__descr">For the first steps in heart rate training</div>
-                            <div class="catalog-item__link_wrapper" ><a href="" class="catalog-item__link">details</a></div>
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphical indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie consumption per workout;</li>
-                            <li>You can view data for 10 workouts.</li>
-                            <a href="" class="catalog-item__back">back</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">$ 99</div>
-                            <div class="catalog-item__price">$ 79</div>
-                        </div>
-                        <button class="button button_mini">buy</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/watches.png" alt="watch" class="catalog-item__img">
@@ -360,7 +359,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">customer reviews</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.5s">
                 <img src="img/clients/photo_1.png" alt="photo" class="reviews__img">
                 <div class="reviews__client">
                     <div class="reviews__client_name">Jesse Boyle</div>
@@ -374,7 +373,7 @@
                     Thanks, RunSmart!</p>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.5s">
                 <img src="img/clients/photo_2.png" alt="photo" class="reviews__img">
                 <div class="reviews__client">
                     <div class="reviews__client_name">John Smith</div>
@@ -387,7 +386,7 @@
                     With them, I prepared for my first half marathon! Thanks!!!</p>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated wow animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.5s">
                 <img src="img/clients/photo_3.png" alt="photo" class="reviews__img">
                 <div class="reviews__client">
                     <div class="reviews__client_name">Rose Jackson</div>
@@ -453,10 +452,15 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup">
+        <img src="icons/circle-chevron-up-solid.svg" alt="up">
+    </a>
+    
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,11 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+
+
 @import 'base/variables';
+@import 'base/animations';
+
 
 * {
 	font-family: 'Roboto', sans-serif;
@@ -19,16 +26,6 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
+@import 'base/media';
 
-.title {
-	font-weight: 700;
-	font-size: 30px;
-	text-align: center;
-	color: #0D0D0D;
-	text-transform: uppercase;
-	&_white {
-		text-align: left;
-		font-size: 36px;
-		color: #FFFFFF;
-	}
-}

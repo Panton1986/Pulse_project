@@ -10,7 +10,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 475px;
-        height: 250px;
+        max-height: 250px;
         background: $main-color;
         padding: 50px 45px 60px 45px;
     }
